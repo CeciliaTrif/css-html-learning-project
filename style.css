@@ -107,7 +107,7 @@ Generate all the standard breakpoints between these. */
 }
 
 .quote {
-    font-size: 36px;
+    font-size: 28px;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: 0;
@@ -122,8 +122,37 @@ Generate all the standard breakpoints between these. */
 
 .sign-up-section {
     background-color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
 }
 
+.sign-up-container {
+    background: #3882F6;
+    width: 80%;
+    border-radius: 10px;
+    color: white;
+    padding: 30px 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.sign-up-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-title {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.sign-up-button {
+    border: 3px solid white;
+}
 
 ul {
     list-style-type: none;
@@ -140,9 +169,10 @@ a {
 
 button {
     color: white;
-    background-color: royalblue;
+    background-color: #3882F6;
     border: none;
     padding: 10px;
     border-radius: 8px;
     margin-top: 10px;
 }
+
