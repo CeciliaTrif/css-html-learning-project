@@ -11,20 +11,49 @@ body {
 /* breakpoints for the body to act as a container.
 Use 1440px as max breakpoint and 360px as min breakpoint.
 Generate all the standard breakpoints between these. */
+.container {
+    width: 100%; /* occupy the full width of its parent */
+    max-width: 100%; /* By default, for mobile */
+    margin: 0 auto; /* Center the container */
+}
 
+/* For Tablets */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* For Laptops */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* For Large Screens */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
 
 .header,
 .footer {
     background-color: #1F2937;
     color: white;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 40px
 }
 
-.footer {
-   justify-content: center;
+.header .container {
+    display: flex;
+    justify-content: space-between
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .body {
@@ -45,9 +74,29 @@ Generate all the standard breakpoints between these. */
 
 .hero-section {
     padding: 20px;
-    display: flex;
     background-color: #1F2937;
     color: white;
+
+}
+
+.hero-section .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-image img {
+    width: auto;
+    height: 200px;
+    object-fit: fill;
+    margin-left: 20px;
+    border: 4px solid white;
+    border-radius: 15px;
 }
 
 .hero-title {
@@ -72,12 +121,12 @@ Generate all the standard breakpoints between these. */
     font-size: 36px;
     font-weight: 900;
     margin: 0;
-    padding: 0;
+    padding-top: 30px;
 }
 
 .plants {
     display: flex;
-    padding: 2em 8em;
+    padding: 30px;
     justify-content: center;
 
 }
@@ -102,8 +151,12 @@ Generate all the standard breakpoints between these. */
     background-color: #E5E7EB;
     color: #1F2937;
     padding: 20px;
+}
+
+.quote-section .container {
     display: flex;
     flex-direction: column;
+    align-items: space-between;
 }
 
 .quote {
@@ -124,7 +177,10 @@ Generate all the standard breakpoints between these. */
     background-color: white;
     padding: 40px;
     display: flex;
-    justify-content: center;
+}
+
+.sign-up-section .container {
+    display: flex;
 }
 
 .sign-up-container {
@@ -175,4 +231,3 @@ button {
     border-radius: 8px;
     margin-top: 10px;
 }
-
