@@ -113,6 +113,7 @@ Generate all the standard breakpoints between these. */
     background-color: white;
     color: #1F2937;
     font-size: 16px;
+    display: flex;
     align-items: center;
     text-align: center;
 }
@@ -121,13 +122,14 @@ Generate all the standard breakpoints between these. */
     font-size: 36px;
     font-weight: 900;
     margin: 0;
-    padding-top: 30px;
+    padding: 30px;
 }
 
 .plants {
     display: flex;
-    padding: 30px;
+    padding-bottom: 100px;
     justify-content: center;
+    gap: 50px;
 
 }
 
@@ -138,7 +140,7 @@ Generate all the standard breakpoints between these. */
 }
 
 .plant-image {
-    width: 70%;
+    width: 100%;
     border: 4px solid royalblue;
     border-radius: 15px;
     padding: 5px;
